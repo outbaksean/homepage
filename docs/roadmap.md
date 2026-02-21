@@ -1,6 +1,6 @@
 # Roadmap
 
-## Step 1 — Vue3 Placeholder App
+## Step 1 — Vue3 Placeholder App (done)
 
 - Scaffold project with Vite + Vue3
 - Pages: Home, Projects
@@ -10,7 +10,7 @@
 - Configure `vite.config.js` build output for S3 (no hash on index.html, etc.)
 - Verify `npm run build` produces a clean `dist/`
 
-## Step 2 — Terraform IaC
+## Step 2 — Terraform IaC (done)
 
 - Terraform state backend: S3 bucket + DynamoDB lock table
 - Resources:
@@ -23,7 +23,7 @@
 - Organize into modules: `s3`, `cdn`, `dns`
 - Outputs: CloudFront URL, S3 bucket name
 
-## Step 3 — GitHub Actions CI/CD
+## Step 3 — GitHub Actions CI/CD (done)
 
 - Store secrets: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID`
 - Workflow trigger: push to `main`
@@ -41,7 +41,7 @@
 - Replace placeholder content with real bio and project descriptions
 - Add project links (GitHub repos, live demos)
 - Choose and apply a consistent visual style/theme
-- Add favicon and basic SEO meta tags
+- Add favicon (done) — Add basic SEO meta tags (`description`, OG tags)
 
 ### Blog
 - Decide on blog approach: static MD files built at compile time vs. fetched at runtime
