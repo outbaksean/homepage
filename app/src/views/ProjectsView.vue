@@ -1,9 +1,10 @@
 <template>
-  <main>
-    <h1>Projects</h1>
-    <p>Nothing here yet — check back soon.</p>
-  </main>
+  <main v-html="content" />
 </template>
+
+<script setup>
+import content from '../content/projects.md'
+</script>
 
 <style scoped>
 main {
@@ -11,7 +12,7 @@ main {
   max-width: 700px;
 }
 
-h1 {
+main :deep(h1) {
   font-size: 2rem;
   margin-bottom: 1rem;
 }

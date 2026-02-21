@@ -1,9 +1,10 @@
 <template>
-  <main>
-    <h1>Hi, I'm CraterVar</h1>
-    <p>Welcome - placeholder content, more soon.</p>
-  </main>
+  <main v-html="content" />
 </template>
+
+<script setup>
+import content from '../content/home.md'
+</script>
 
 <style scoped>
   main {
@@ -11,8 +12,12 @@
     max-width: 700px;
   }
 
-  h1 {
+  main :deep(h1) {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  main :deep(p) {
     margin-bottom: 1rem;
   }
 </style>
