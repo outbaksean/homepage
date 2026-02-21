@@ -18,7 +18,7 @@ output "cloudfront_distribution_id" {
   value       = module.cdn.cloudfront_distribution_id
 }
 
-# output "github_actions_role_arn" {
-#   description = "IAM role ARN — set as AWS_ROLE_ARN in GitHub Actions secrets"
-#   value       = module.oidc.role_arn
-# }
+output "github_actions_role_arn" {
+  description = "IAM role ARN — set as AWS_ROLE_ARN in GitHub Actions secrets"
+  value       = module.oidc.role_arn
+}

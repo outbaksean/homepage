@@ -64,14 +64,14 @@ module "dns" {
   cloudfront_hosted_zone_id = module.cdn.cloudfront_hosted_zone_id
 }
 
-# module "oidc" {
-#   source                      = "./modules/oidc"
-#   project_name                = var.project_name
-#   github_org                  = var.github_org
-#   github_repo                 = var.github_repo
-#   s3_bucket_arn               = module.s3.bucket_arn
-#   cloudfront_distribution_arn = module.cdn.cloudfront_distribution_arn
-# }
+module "oidc" {
+  source                      = "./modules/oidc"
+  project_name                = var.project_name
+  github_org                  = var.github_org
+  github_repo                 = var.github_repo
+  s3_bucket_arn               = module.s3.bucket_arn
+  cloudfront_distribution_arn = module.cdn.cloudfront_distribution_arn
+}
 
 # -------------------------
 # S3 Bucket Policy
