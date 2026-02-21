@@ -1,19 +1,11 @@
 <template>
-  <main v-html="content" />
+  <main>
+    <h1>Active Projects</h1>
+    <ProjectCard :content="ootp_missions" />
+  </main>
 </template>
 
 <script setup>
-import content from '../content/projects.md'
+  import ootp_missions from "../content/ootp_missions.md";
+  import ProjectCard from "../components/ProjectCard.vue";
 </script>
-
-<style scoped>
-main {
-  padding: 4rem 2rem;
-  max-width: 700px;
-}
-
-main :deep(h1) {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-</style>
