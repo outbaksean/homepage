@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1>Hi, I'm CraterVar</h1>
-    <p>Welcome - placeholder content, more soon.</p>
+    <p>Welcome - placeholder content, more soon. CI test.</p>
   </main>
 </template>
 
