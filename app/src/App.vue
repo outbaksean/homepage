@@ -3,6 +3,7 @@
     <img src="/moon.svg" alt="cratervar" class="nav-logo" />
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/projects">Projects</RouterLink>
+    <a href="/ootp-missions-27/">OOTP Missions</a>
   </nav>
   <RouterView />
 </template>

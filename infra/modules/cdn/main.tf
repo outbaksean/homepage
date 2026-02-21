@@ -1,3 +1,18 @@
+resource "aws_cloudfront_function" "directory_index" {
+  name    = "${var.project_name}-directory-index"
+  runtime = "cloudfront-js-2.0"
+  publish = true
+  code    = <<-EOT
+    function handler(event) {
+      var request = event.request;
+      if (request.uri.endsWith('/')) {
+        request.uri += 'index.html';
+      }
+      return request;
+    }
+  EOT
+}
+
 resource "aws_cloudfront_origin_access_control" "site" {
   name                              = var.project_name
   origin_access_control_origin_type = "s3"
@@ -34,6 +49,11 @@ resource "aws_cloudfront_distribution" "site" {
     min_ttl     = 0
     default_ttl = 3600
     max_ttl     = 86400
+
+    function_association {
+      event_type   = "viewer-request"
+      function_arn = aws_cloudfront_function.directory_index.arn
+    }
   }
 
   # SPA routing: serve index.html on 403/404 so Vue Router handles the path
