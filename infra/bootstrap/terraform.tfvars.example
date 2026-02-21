@@ -1,0 +1,3 @@
+state_bucket_name = "homepage-tfstate"
+lock_table_name   = "homepage-tfstate-lock"
+region            = "us-east-1"

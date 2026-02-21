@@ -1,0 +1,26 @@
+# App
+node_modules/
+dist/
+.env
+.env.local
+
+# Terraform
+infra/terraform.tfvars
+infra/bootstrap/*.tfstate
+infra/bootstrap/*.tfstate.backup
+infra/.terraform/
+infra/bootstrap/.terraform/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+
+# Private
+private_docs/
