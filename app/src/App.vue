@@ -43,4 +43,51 @@ nav a.router-link-active {
   color: #1a1a1a;
   font-weight: 600;
 }
+
+main {
+  padding: 4rem 2rem;
+  max-width: 700px;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+main h3 {
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+main ul,
+main ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main li {
+  line-height: 1.6;
+}
+
+main a {
+  color: #1a1a1a;
+}
+
+main hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
 </style>
