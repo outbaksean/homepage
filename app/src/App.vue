@@ -1,5 +1,6 @@
 <template>
   <nav>
+    <img src="/moon.svg" alt="cratervar" class="nav-logo" />
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/projects">Projects</RouterLink>
   </nav>
@@ -21,9 +22,16 @@ body {
 
 nav {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   padding: 1rem 2rem;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-logo {
+  width: 38px;
+  height: 38px;
+  margin-right: 0.5rem;
 }
 
 nav a {
