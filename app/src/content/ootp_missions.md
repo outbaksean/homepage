@@ -1,4 +1,6 @@
-# OOTP Missions [Mission Calculator](https://outbaksean.github.io/ootp-missions-2/)
+# [OOTP Missions](https://outbaksean.github.io/ootp-missions-2/)
+
+### App - [Mission Calculator](https://outbaksean.github.io/ootp-missions-2/)
 
 ### Repo - [ootp-missions-2](https://github.com/outbaksean/ootp-missions-2)
 
