@@ -32,7 +32,7 @@ git push -u origin your-branch-name
 # open a PR on GitHub
 ```
 
-On PR open: CI runs a build check. On merge to `main`: the site deploys automatically.
+On PR open: CI runs a build check (skipped if no `app/` changes). On merge to `main`: the site deploys automatically (skipped if no `app/` changes).
 
 ## Infrastructure
 
