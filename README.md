@@ -19,17 +19,20 @@ npm install
 npm run dev     # http://localhost:5173
 ```
 
-## Deploy
+## Contributing
 
-Deployments are currently manual. From the repo root:
+All changes go through a pull request — direct pushes to `main` are blocked.
 
 ```bash
-cd app && npm run build && cd ..
-aws s3 sync app/dist/ s3://<bucket-name> --delete
-aws cloudfront create-invalidation --distribution-id <id> --paths "/*"
+git checkout -b your-branch-name
+# make changes
+git add .
+git commit -m "describe the change"
+git push -u origin your-branch-name
+# open a PR on GitHub
 ```
 
-GitHub Actions automation is planned — see `app/README.md`.
+On PR open: CI runs a build check. On merge to `main`: the site deploys automatically.
 
 ## Infrastructure
 
