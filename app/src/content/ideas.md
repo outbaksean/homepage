@@ -15,3 +15,15 @@ I want to learn about 3JS, probably by trying to make an isometric rpg
 ## AI Claw
 
 A Claw is an AI harness that has a channel for the user to message it and can schedule AI tasks or run them on demand. I like the idea of making my own claw, deployed on my minipc server running a local model with Discord as a chat channel to help manage my media library.
+
+## Stellaris Management
+
+Stellaris is a strategy game similar to Civilization in space that I enjoy playing. Planet manegement can get tricky if I go wide, also keeping track of tech can be difficult.
+
+- Planet Management
+  - List of planets by sector
+  - Planet special features
+  - What the planet currently produces, current pop, production plan etc.
+
+- Tech Tracker
+  - Find ways to get details from game or save files on what techs are available to rush specific to techs

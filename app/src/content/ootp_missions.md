@@ -6,6 +6,8 @@
 
 ---
 
+This project is archived, new ootp mission work will be done in ootp-missions-27.
+
 ### OOTP
 
 Out of the Park is a baseball simulation game with a Perfect Team game mode similar to Madden Ultimate where you collect cards. There's a new version every year, the current version is OOTP 26, OOTP 27 releases March 13.

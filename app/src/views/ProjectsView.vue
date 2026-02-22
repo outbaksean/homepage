@@ -3,6 +3,7 @@
     <h1>Active Projects</h1>
     <ProjectCard :content="cratervar" />
     <ProjectCard :content="ootp_missions_27" />
+    <h1>Archived Projects</h1>
     <ProjectCard :content="ootp_missions" />
     <h2>Possible Future Projects</h2>
     <ProjectCard :content="ideas" />
