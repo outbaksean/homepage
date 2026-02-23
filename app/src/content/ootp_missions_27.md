@@ -6,6 +6,12 @@
 
 ---
 
+### Known Bugs
+
+- Unlocked Card Price is not calculated correctly, it's including all unlocked cards not just what's needed for the mission
+- Recalculating a mission after overriding price undoes other calculations
+- Some missions have bad detail layout
+
 ### Working Notes
 
 - Cleanup warnings and tests
@@ -31,6 +37,8 @@ The mission calculator is a web app that lets you import your player and shop da
 - UI Overhaul Done
 - Import flow updated/fixed
 - General performance improvements
+- Added the ability to override card prices and lock status
+- Displays mission reward value and net mission value
 
 ### In Season Updates
 
@@ -41,10 +49,5 @@ The mission calculator is a web app that lets you import your player and shop da
 
 ### Potential New Features
 
-- Find a way to calculate mission value - Non-Locked plus remaining card value minus reward value
-  - Set default pack value and allow overrides
-  - Allow lock selection in ui
-  - Include sorting and filters
-- Allow overrides of card cost
-- Group missions by reward visually in mission list
-  - Allow alternative groups, category etc.
+- Allow selecting owned cards in the ui
+- Calculate Pack EV
