@@ -1,7 +1,9 @@
 <template>
-  <main v-html="content" />
-  <ProjectCard :content="session2" />
-  <ProjectCard :content="session1" />
+  <main>
+    <div v-html="content" />
+    <ProjectCard :content="session2" />
+    <ProjectCard :content="session1" />
+  </main>
 </template>
 
 <script setup>
