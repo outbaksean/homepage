@@ -6,6 +6,14 @@
 
 ---
 
+### Working Notes
+
+- Continue with first load time performance work
+- Cleanup warnings and tests
+- Plan for OCR to get mission data
+
+---
+
 ### OOTP
 
 Out of the Park is a baseball simulation game with a Perfect Team game mode similar to Madden Ultimate where you collect cards. There's a new version every year, the current version is OOTP 26, OOTP 27 releases March 13.
@@ -20,12 +28,21 @@ The mission calculator is a web app that lets you import your player and shop da
 - Currently using OOTP 26 data with plans to migrate to OOTP 27 missions and cards on or near release date
 - Updated mission calculation algorithm for a major performance boost, removed greedy mode toggle
 - Added Mission Search
+- UI Overhaul Done
 
-### Roadmap
+### In Season Updates
 
-- UI Overhaul, details TBD
-- Find a way to more easily update missions and card updates during the seasion
+- When cards or updated or added I need to manually export card data from the game and import into the app, this will take well under an hour but requires manual work
+- Currently any new missions need to be added manually and can take several hours depending on the amount of missions
   - Getting mission data programatically has been tried and failed. The data doesn't seem to be saved on a system file and decrypting api requests with WireShark failed
-  - The plan is to try to set up OCR for mission data and continue to manually export card shop data
-  - Consider crowdsourcing
-- There are no plans for a backend since the algorithm changes made it acceptable performance wise to do the calculations in the browser.
+  - I'm going to look into using OCR to get mission data
+
+### Potential New Features
+
+- Find a way to calculate mission value - Non-Locked plus remaining card value minus reward value
+  - Set default pack value and allow overrides
+  - Allow lock selection in ui
+  - Include sorting and filters
+- Allow overrides of card cost
+- Group missions by reward visually in mission list
+  - Allow alternative groups, category etc.
