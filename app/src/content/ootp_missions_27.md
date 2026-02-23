@@ -8,9 +8,9 @@
 
 ### Working Notes
 
-- Continue with first load time performance work
 - Cleanup warnings and tests
 - Plan for OCR to get mission data
+- Start on new features (listed below)
 
 ---
 
@@ -29,6 +29,8 @@ The mission calculator is a web app that lets you import your player and shop da
 - Updated mission calculation algorithm for a major performance boost, removed greedy mode toggle
 - Added Mission Search
 - UI Overhaul Done
+- Import flow updated/fixed
+- General performance improvements
 
 ### In Season Updates
 
