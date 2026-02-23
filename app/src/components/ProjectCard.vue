@@ -31,10 +31,17 @@ const body = computed(() => parsed.value.body)
 
 <style scoped>
 .card {
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
   overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -42,29 +49,33 @@ const body = computed(() => parsed.value.body)
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1rem;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 0.92rem;
+  font-weight: 600;
   font-family: inherit;
-  color: #1a1a1a;
+  color: #1e293b;
   text-align: left;
 }
 
 .card-header:hover {
-  background: #f9f9f9;
+  background: #f8fafc;
 }
 
 .toggle {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
+  color: #64748b;
   flex-shrink: 0;
   margin-left: 1rem;
 }
 
 .card-body {
-  padding: 0 1.25rem 1.25rem;
+  padding: 0 1rem 1rem;
+  font-size: 0.875rem;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
 }
 </style>
