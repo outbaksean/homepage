@@ -1,6 +1,7 @@
 <template>
   <main>
     <div v-html="content" />
+    <ProjectCard :content="session3" />
     <ProjectCard :content="session2" />
     <ProjectCard :content="session1" />
   </main>
@@ -10,5 +11,6 @@
   import content from "../content/home.md";
   import session1 from "../content/sessions/session_2_14_2026.md";
   import session2 from "../content/sessions/session_2_21_2026.md";
+  import session3 from "../content/sessions/session_2_28_2026.md";
   import ProjectCard from "../components/ProjectCard.vue";
 </script>
